@@ -1,0 +1,60 @@
+Writting in <style></style> element.
+
+---- e.g. ----
+<style>
+  .subscribe-button {
+    background-color: rgb(201, 0, 0);
+    color:white;
+    border: none;
+    height: 36px;
+    width: 110px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button>JOIN</button>
+---- ----
+
+General tech. : make a class, element with HTML, style with CSS one by one.
+
+side, space : margin.
+button side : border
+
+
+-----------------------
+
+Hovers, Transitions, shadows
+
+: .class:hover -> 이런식으로 만든다.
+
+Hovers : 커서 올렸을때 색깔 변경.
+Shadows : 커서 올렸을때 그림자효과
+active : effect when real click 
+transition : 부드럽게 변화하도록 해줌
+ *transition:opacity 0.15s; // class-main에 넣는게 낫다.
+
+
+shadow - box-shadow: 0(horizontal) 0(vertical) 0(blur) black;
+ 세 속성을 변형시키며 이용
+
+
+
+--------------------------
+
+align - html은 text베이스로 정렬되어 있음.
+padding 기준으로 정렬 하고 싶을 경우, 정렬을 원하는 부분을 vertical-align: top; 이런식으로 설정
+
+
+
+-------------------------text--------------------------
+
+
+font : http://www.tcpschool.com/css/css_basic_fonts
+
+HTML entity
+
+<span></span> - 기본 글자 스타일과 같음. 그래서 span class 지정한 후 개인 서식 적용가능
+
+

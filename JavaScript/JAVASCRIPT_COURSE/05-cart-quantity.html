@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    
+  </head>
+
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick = "
+      console.log(`Cart quantity: ${cart_quantity}`);
+    ">Show Quantity</button>
+    <button onclick = "
+      cart_quantity+=1;
+      console.log(`Cart quantity: ${cart_quantity}`);
+    ">Add to Cart</button>
+    <button onclick = "
+      cart_quantity+=2;
+      console.log(`Cart quantity: ${cart_quantity}`);
+    ">+2</button>
+    <button onclick = "
+      cart_quantity+=3;
+      console.log(`Cart quantity: ${cart_quantity}`);
+    ">+3</button>
+    <button onclick = "
+      cart_quantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cart_quantity}`);
+    ">Reset Cart</button>
+
+    <script>
+      let cart_quantity = 0;
+      // camelCase is standard variable naming in JavaScript. (cartQuantity)
+      // cf) PascalCase : CartQuantity // kebab-case : cart-quantity(doesn't work) // snake_case : cart_quantity : used in other language, not used in JavaScript.
+
+    </script> 
+  </body>
+
+</html>

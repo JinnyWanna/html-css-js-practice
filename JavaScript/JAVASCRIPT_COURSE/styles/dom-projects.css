@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+}
+
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  
+  font-size: 13px;
+  font-weight: 700;
+  
+  border: none;
+  border-radius: 25px;
+  box-shadow: none;
+  padding: 10px 15px;
+
+  margin-bottom: 35px;
+}
+
+.is-subscribed { /* subscribe-button아래에 있어야 적용됨. 아래있는게 우선적용 */
+  background-color: rgb(240,240,240);
+  color: black;
+  cursor: pointer;
+  
+  font-size: 13px;
+  font-weight: 700;
+  
+  border: none;
+  border-radius: 25px;
+  box-shadow: none;
+  padding: 10px 15px;
+
+  margin-bottom: 35px;
+}
+.cost-input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.calculate-button {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+
+  padding: 12px 15px;
+  font-size: 15px;
+  
+  border: none;
+}

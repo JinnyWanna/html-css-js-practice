@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>DOM</title> <!-- DOM is built-in object. 
+    combines JS and HTML together. It gives JS full control of the webpage.
+    -->
+  </head>
+  <body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+
+    <script>
+      console.log(document.querySelector('button').innerHTML); // querySelector는 document파일 안의 query를 받아올 수 있다. 트리 노드상에서 가져옴 // 첫번째 버튼 가져오네
+      document.querySelector('button').innerHTML = 'Changed';
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+      /*
+      console.log(document.title);
+      document.title = 'Changed';
+      console.log(document.body);
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML); // string
+      document.body.innerHTML = '<button>Good job!</button>';
+      */
+      /*
+      document.body.innerHTML = 'hello';
+      document.title = 'Good job!';
+      */
+    </script>
+  </body>
+</html>

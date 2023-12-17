@@ -1,0 +1,42 @@
+.sidebar {
+  
+  position: fixed;
+  background-color: white;
+
+  z-index: 100;
+
+  top: 55px;
+  bottom: 0;
+  left: 0;  
+  width: 72px;
+  padding-top: 6px;
+}
+
+.sidebar-link {
+  background-color: white;
+  height: 74px;
+  display:flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  /* flex-direction에선 정렬 방향이 세로로 변하므로, 
+  justify-content와 align-items의 기능이 서로 변함. 
+  */
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(238,238,238);
+}
+
+.sidebar-link img {
+  height:24px;
+  margin-top: -1px;
+  margin-bottom: 6px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10px;
+}
+

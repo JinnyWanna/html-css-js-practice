@@ -1,0 +1,175 @@
+https://www.w3schools.com/TagS/
+
+HTML is markup language.
+RESPONSIBLE FOR WEBPAGE STRUCTURE.
+
+<element>content</element>
+
+<h1>Heading</h1> === Heading Element
+<p>Paragraph</p> === Paragraph Element
+
+<img src=" "> === Image Element
+<br /> === Line Break
+
+
+<head>
+// head - meta //
+1. meta charset
+    문자열 인코딩 방식 지정
+
+2. meta name
+    ="author" 저자 명시
+
+    ="description" 웹페이지 설명 명시
+
+    ="generator" 소프트웨어 패키지 명시
+
+
+
+<body>
+
+1. <h1> ~ <h6> 글씨 크기조절    
+
+2. <p> Paragraph. 
+    2.1. <p style="color: blue/red/.../; background-color: ~"> 색깔 조정 가능
+색깔 태그는 어디든 넣을 수 있다.ㄴ
+
+3. <b> 강조하고 싶은 글씨만 볼드체
+4. <i> 기울어진 글씨
+
+5. <br/> 라인 하나 점프
+6. <hr/> 선그음
+
+7. <big></big> 글씨 크게만들음
+8. <small></small>
+
+9. <sub></sub> sub태그 이용해서 아래에 작은 숫자로(H2O에서 2) 바꿀 수 있다. subscript
+10. <sup></sup> sup태그 이용에서 위에 작은 숫자로 바꿀 수 있다. superscript
+
+//layout//
+<header>
+<main>
+<footer>
+
+<nav>
+<aside>
+<article>
+<section>
+
+//link//
+<a href="#"> -- 누르면 링크 홈페이지로
+<a href="#" target="_blank> -- 누르면 새 탭으로 링크연결
+http://www.tcpschool.com/html-tag-attrs/a-href
+
+//image//
+<img src="(location)" alt="이미지 불러오기 실패했을때 보여줄 대체 텍스트">
+/* 속성들 http://www.tcpschool.com/html-tags/img*/
+
+*사이즈 조정
+
+//video, iframe//
+https://coding-factory.tistory.com/886
+
+<video src="link" (속성들)></video>
+&
+iframe - youtube embed에서 코드 가져오기 가능
+
+//list//
+    1.
+    ordered list
+        <ol></ol> 태그
+    unordered list
+        <ul></ul> 태그
+
+    *태그 안에 리스트목록을 <li></li>로 작성함
+
+    2.
+    <dl> 태그 <dt>에 종속되는 <dd> 목록으로 구성 가능
+
+//Table//
+
+<table> -- 테이블 만들기
+<th> table header -- 1열부터 이름 만들음
+<tr> table row -- 행 만들기
+<td> table data -- 열 정보 삽입
+
+https://coding-factory.tistory.com/184
+
++ <thead>
+<tbody> 지정 가능
+
+
+// inline, block //
+1. block element- p(paragraph), div
+use entire line
+
+2. inline-block element
+CSS명령어로 block요소를 inline으로 변경
+inline을 block 으로 변경
+
+3. inline element- a(href), span
+inline은 같은 행에 출력, 길이에 따라 위치가 변할수있음
+
+
+https://www.daleseo.com/css-display-inline-block/
+
+L div is just a box. Can contain any other things. // first, it is block element. We can use it like box by using inline-block display.
+
+//input, form//
+
+<input type="" value=""/>
+<textarea></textarea>
+
+checkbox
+
+radio // radio타입에서 같은 name을 가진 버튼들은 하나만 체크가능
+
+
+<!-- 
+<form>
+    <input />
+</form>
+-->
+
+//meta//
+
+--------------------------------
+
+CSS Grid
+    <!-- inline-block으로 구획 나누어 horizontal로 사용하는 경우,
+    전체를 100%로 생각하고 두 구획을 20%, 80%로 나눌 시 horizontal로 배열되지 않고
+    vertical로 배열된다. 이 문제는 </div>와 <div> 사이에 띄어쓰기가 존재하기 때문이다. (HTML에선 몇칸의 띄어쓰기이든 1칸의 띄어쓰기로 인식)
+
+    이 문제를 해결하기 위해서 CSS Grid란 테크닉이 있다. -->
+
+    e.g.)
+    display: grid;
+    grid-template-columns: 100px 100px; (두개 column생성, 한 column의 행크기 100px 씩)
+
+
+Flexbox
+    <!-- Flexbox is asimilar to CSS grid, but it's more flexible.-->
+    
+    1. flex. flex-direction으로 정렬방향 지정 가능.
+    flex는 글자의 길이에 따라 크기가 변한다.
+
+    flex: 1은 grid의 1fr과 같다.
+
+https://miaow-miaow.tistory.com/122 : align-item과 justify-content
+
+flexbox의 justify-content상황에서 간격이 줄어드는걸 막고싶으면 --> flex-shrink: 0;
+
+
++search-box는 default width를 가지고있어 flex여도 더이상 줄지 않기때문에, 
+화면 크기에대해 변화를 계속하고싶다면 width를 설정해주어야한다
+
+
+CSS position 
+
+    fixed: place in the browsor window
+        우리가 브라우저 서칭할때 눈에 보이는 window화면 그 위에 고정
+
+    absoulute: place on the page
+        웹페이지 그 위치에 고정 // 스크롤 움직일때 사라질 수 있다.' absolute는 relative위에 얹을 수 있다.
+
+

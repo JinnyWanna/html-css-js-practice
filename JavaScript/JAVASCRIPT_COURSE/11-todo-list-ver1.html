@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <p>Todo List</p>
+    <input placeholder="Todo name" class="js-list-input" onkeydown="
+      if(event.key === 'Enter') addTodo();    
+    
+      ">
+    <button onclick="
+      addTodo();
+    ">Add</button>
+    
+    <script src="scripts/11-todo-list.js"></script>
+  </body>
+</html>
