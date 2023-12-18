@@ -3,17 +3,21 @@
 <html>
   <head>
     <title>Todo List</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles/11-todo-list.css">
+  </head> 
+  <body> 
     <p>Todo List</p>
-    <input placeholder="Todo name" class="js-list-input" onkeydown="
-      if(event.key === 'Enter') addTodo();    
-    
-      ">
-    <button class = "add-button" onclick="
-      addTodo();
-    ">Add</button>
-    <div class = "js-todo-list"></div>
+    <div class="todo-input-grid">
+      <input placeholder="Todo name" class="js-list-input css-list-input" onkeydown="
+        if(event.key === 'Enter') addTodo();    
+      
+        ">
+      <input type="date" class = "js-date-input css-date-input">
+      <button class = "add-button css-add-button" onclick="
+        addTodo();
+      ">Add</button>
+    </div>
+    <div class = "js-todo-list todo-grid"></div>
     
     
     <script src="scripts/11-todo-list.js"></script>
