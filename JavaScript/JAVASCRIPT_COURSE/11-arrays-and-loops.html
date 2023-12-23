@@ -42,7 +42,13 @@
       }
       */
 
+      const array1 = [1, 2, 3]; // array는 reference를 지시함 
+      const array2 = array1; // array1을 복사해 새로운 주소 생성하고싶으면 --> const array2 = array1.slice();
+      array2.push(4);
+      console.log(array1); // 1 2 3 4
+      console.log(array2); // 1 2 3 4
       
+      const [firstValue, secondValue] = [1, 2, 3];
     </script>
   </body>
 </html>
